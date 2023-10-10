@@ -6,7 +6,6 @@ import Info from "./components/Info"
 import Navbar from "./components/Navbar"
 import Skills from "./components/Skills"
 import Works from "./components/Works"
-import { Footer } from "./components/Footer"
 import {Routes, Route} from "react-router-dom";
 
 function App() {
@@ -17,20 +16,14 @@ function App() {
         <label htmlFor="darkMode" className="dark-mode-toggle">
           <i className="fa-solid fa-circle-half-stroke"></i>
         </label>
-        <Navbar /> 
-        <Routes>
-          <Route path="/" element={<Hero/>}/>
-          <Route path="/skills" element={<Skills/>}/>
-          <Route path="/projects" element={<Works/>}/>
-          <Route path="/about-me" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-        </Routes>
-        {/* <Info />
+        
+        <Navbar />
+        <Hero />
+        <Info />
         <Skills />
         <Works />
         <About />
-        <Contact /> */}
-        <Footer/>
+        <Contact />
       </div>
     </>
   )
